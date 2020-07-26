@@ -1,7 +1,20 @@
 // Colours
 $c-white: #fff;
 $c-black: #000;
+$c-white-text: rgba($c-white, 0.9);;
 $c-mine-shaft: #2c2c2c;
+// $c-primary: #ee6352;
+$c-primary: #8BB174;
+// $c-primary-muted: #b1baab;
+// $c-tertiary: #D8CC34;
+
+// Fonts
+$f-fira-medium: 'Fira Medium';
+$f-fira-regular: 'Fira Regular';
+$f-vt323: 'VT323';
+$f-rubik-medium: 'Rubik Medium';
+$f-rubik-regular: 'Rubik Regular';
+$f-rubik-bold: 'Rubik Bold';
 
 // Layout
 $spacing: 15px;
@@ -46,3 +59,8 @@ $ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
 $ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 // Z-indexes
+
+
+// Misc
+$gutter: 1.5rem;
+$page-top-bar-height: 8px;

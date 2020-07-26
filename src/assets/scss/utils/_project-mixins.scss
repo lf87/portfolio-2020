@@ -1,0 +1,7 @@
+// @include full-flex
+@mixin full-flex($dir: column) {
+  display: flex;
+  flex-direction: $dir;
+  position: relative;
+  width: 100%;
+}

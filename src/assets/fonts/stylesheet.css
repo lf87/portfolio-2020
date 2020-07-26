@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('subset-FiraMono-Medium.woff2') format('woff2'),
+        url('subset-FiraMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('subset-VT323-Regular.woff2') format('woff2'),
+        url('subset-VT323-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('subset-FiraMono-Regular.woff2') format('woff2'),
+        url('subset-FiraMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

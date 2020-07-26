@@ -17,7 +17,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Luke Fryer Web Developer',
   plugins: [
     {
       use: 'gridsome-plugin-pwa',
