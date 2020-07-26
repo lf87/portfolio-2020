@@ -1,0 +1,20 @@
+{
+  "name": "lf20",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "style-resources-loader": "^1.3.3"
+  }
+}
