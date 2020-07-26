@@ -11,25 +11,37 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/assets/scss/utils/*.scss'),
+        path.resolve(__dirname, './src/assets/scss/_style.scss'),
       ],
     })
 }
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: [],
+  plugins: [
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        disableServiceWorker: false,
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+        manifestPath: 'manifest.json',
+        title: 'Gridsome',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        themeColor: '#666600',
+        backgroundColor: '#ffffff',
+        icon: '/static/temp.png'
+      }
+    }
+  ],
   siteUrl: 'https://lf20.github.io',
-  pathPrefix: '/lf20',
+  pathPrefix: '/',
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 
-    types.forEach(type => {
-      addStyleResource(config.module.rule('sass').oneOf(type))
-    })
-
-    // or if you use scss
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })

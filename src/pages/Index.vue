@@ -29,7 +29,6 @@ export default {
 <style lang="scss">
 .home-links a {
   @include font-size(30px);
-  color: $black;
   margin-right: 1rem;
 }
 
