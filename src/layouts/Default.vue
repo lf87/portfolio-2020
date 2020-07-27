@@ -2,14 +2,16 @@
   <div class="layout">
     <SiteHeader />
     <slot />
+    <SiteFooter />
   </div>
 </template>
 
 <script>
 import SiteHeader from '~/components/SiteHeader.vue'
+import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
-  components: { SiteHeader }
+  components: { SiteHeader, SiteFooter }
 }
 </script>
 
@@ -113,17 +115,21 @@ p {
   @include font-size(16px);
   margin-bottom: 1em;
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   a {
     color: $c-white-text;
+
+    &:hover {
+      color: $c-white;
+    }
   }
 }
 
 .layout {
   @include full-flex;
-  max-width: 20rem#c1d5b4;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  min-height: 100vh;
 }
 </style>

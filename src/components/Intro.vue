@@ -9,7 +9,7 @@
     <div class="intro__copy">
       <p>Using the appropiate tools and processes he has created highly performt and visually pleasing websites for clients such as - Walmart, Asda, 188Bet, Coral, Co-op, and Jet2.</p>
       <p>
-        And a number of sites using his framework of choice
+        Most recently he's been building web applications using his framework of choice
         <a
           target="vuejs"
           rel="noreferrer noopener"
@@ -80,6 +80,9 @@ export default {
 <style lang="scss" scoped>
 .intro {
   @include full-flex;
+  @include container;
+  margin-bottom: 4rem;
+
 }
 
 .intro__heading {

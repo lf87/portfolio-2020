@@ -5,3 +5,11 @@
   position: relative;
   width: 100%;
 }
+
+@mixin container {
+  // max-width: 50rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
