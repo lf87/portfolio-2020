@@ -1,14 +1,9 @@
 <template>
-  <header class="site-header">
-    <strong class="site-header__site-name">
-      <!-- <g-link class="header__site-name" to="/">{{ $static.metadata.siteName }}</g-link> -->
-      <g-link to="/">Luke Fryer - Web Developer</g-link>
-    </strong>
-    <nav class="site-header__nav">
-      <g-link class="site-header__nav-link" to="/">Home</g-link>
-      <g-link class="site-header__nav-link" to="/about/">About</g-link>
-      <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
-      <g-link class="site-header__nav-link" to="/work/">Work</g-link>
+  <header class="site-footer">
+    <nav class="site-footer__nav">
+      <a target="github" rel="noreferrer noopener" href="https://github.com/lf87">Github</a>
+      <a target="linkedin" rel="noreferrer noopener" href="https://www.linkedin.com/in/luke-fryer-85565a95/">LinkedIn</a>
+      <a target="twitter" rel="noreferrer noopener" href="https://twitter.com/LukeFryer">Twitter</a>
     </nav>
   </header>
 </template>
@@ -20,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.site-header {
+.site-footer {
   @include full-flex(row);
   flex-wrap: wrap;
   padding-top: 2rem;
