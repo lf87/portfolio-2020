@@ -131,5 +131,6 @@ p {
 .layout {
   @include full-flex;
   min-height: 100vh;
+  overflow: hidden;
 }
 </style>

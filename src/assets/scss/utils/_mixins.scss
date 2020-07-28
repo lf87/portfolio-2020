@@ -91,3 +91,8 @@
     @content;
   }
 }
+
+@mixin remove-highlight {
+  outline: none;
+  -webkit-tap-highlight-color: transparent !important;
+}
