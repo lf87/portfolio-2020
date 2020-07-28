@@ -1,0 +1,11 @@
+  {
+    "name": "Brand Recognition Quiz",
+    "metaDesc": "Can you recognise 15 of the world’s top brands from just a small crop of their logo? Take the quiz.",
+    "projectDesc": "",
+    "techStack": [
+      "vuejs",
+      "gsap",
+      "php",
+      "sass"
+    ]
+  }

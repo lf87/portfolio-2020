@@ -9,17 +9,17 @@
         Most recently he's been building web applications using his framework of choice
         <a
           target="vuejs"
-          rel="noreferrer noopener"
+          
           href="https://vuejs.org/"
         >Vue.JS</a> - one of which was nominated for
         <a
           target="siteoftheyear"
-          rel="noreferrer noopener"
+          
           href="https://annual.awwwards.com/categories/mobile-site-of-the-year/british-sign-language-quiz"
         >Mobile site of the year</a> on
         <a
           target="awwwards"
-          rel="noreferrer noopener"
+          
           href="https://annual.awwwards.com/"
         >Awwwards.</a>
       </p>

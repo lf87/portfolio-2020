@@ -1,0 +1,14 @@
+  {
+    "logos": [
+      {
+        "filetype": "svg",
+        "id": "sass",
+        "text": "SASS"
+      },
+      {
+        "filetype": "svg",
+        "id": "bem",
+        "text": "BEM"
+      }
+    ]
+  }

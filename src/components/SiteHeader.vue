@@ -16,11 +16,10 @@
     <nav :class="['site-header__nav', { 'active': navActive }]">
       <g-link class="site-header__nav-link" to="/">Home</g-link>
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
-      <!-- seperate sections for personal and client work -->
-      <g-link class="site-header__nav-link" to="/work/">Client Projects</g-link>
-      <g-link class="site-header__nav-link" to="/work/">Personal Projects</g-link>
-      <g-link class="site-header__nav-link" to="/work/">Testimonials</g-link>
-      <g-link class="site-header__nav-link" to="/work/">CV (PDF)</g-link>
+      <g-link class="site-header__nav-link" to="/client-projects/">Client Projects</g-link>
+      <g-link class="site-header__nav-link" to="/personal-projects/">Personal Projects</g-link>
+      <g-link class="site-header__nav-link" to="/testimonials/">Testimonials</g-link>
+      <g-link class="site-header__nav-link" to="/cv/">CV (PDF)</g-link>
     </nav>
   </header>
 </template>

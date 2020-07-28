@@ -12,6 +12,7 @@
             <li>Mobile first</li>
             <li>Responsive Web Development</li>
             <li>UX and Accessibility</li>
+            <li>Progressive Web Apps</li>
             <li>Workflow automation</li>
             <li>Cross-browser Compatibility</li>
             <li>SEO and Semantic code</li>
@@ -23,6 +24,26 @@
           </ul>
         </div>
         <div class="lists__item">
+          <h3 class="heading heading--small">Tech</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SASS</li>
+            <li>JavaScript</li>
+            <li>ECMAScript 6</li>
+            <li>Vue.js</li>
+            <li>Vue CLI</li>
+            <li>Gridsome</li>
+            <li>GSAP</li>
+            <li>Webpack</li>
+            <li>Gulp</li>
+            <li>Azure Devops</li>
+            <li>Git</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+          </ul>
+        </div>
+        <div class="lists__item">
           <h3 class="heading heading--small">CMS/CRM</h3>
           <ul>
             <li>Wordpress</li>
@@ -31,21 +52,6 @@
             <li>Dotmailer</li>
             <li>Mailchimp</li>
             <li>Salesforce</li>
-          </ul>
-        </div>
-        <div class="lists__item">
-          <h3 class="heading heading--small">Web Stack</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>SASS</li>
-            <li>JavaScript</li>
-            <li>Vue.js</li>
-            <li>GSAP</li>
-            <li>Webpack</li>
-            <li>Gridsome</li>
-            <li>Gulp</li>
-            <li>jQuery</li>
           </ul>
         </div>
       </div>
