@@ -32,7 +32,7 @@ module.exports = {
         statusBarStyle: 'default',
         themeColor: '#666600',
         backgroundColor: '#ffffff',
-        icon: '/static/temp.png'
+        icon: './src/assets/img/temp.png'
       }
     }
   ],
