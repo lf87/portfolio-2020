@@ -1,6 +1,6 @@
 <template>
   <footer class="site-footer">
-    <nav class="site-footer__nav">
+    <div class="site-footer__links">
       <a
         class="site-footer__link"
         target="github"
@@ -54,6 +54,14 @@
         </svg>
         <span class="site-footer__text">Twitter</span>
       </a>
+    </div>
+    <nav :class="['site-footer__nav', { 'active': navActive }]">
+      <g-link class="site-footer__nav-link" to="/">Home</g-link>
+      <g-link class="site-footer__nav-link" to="/skills/">Skills</g-link>
+      <g-link class="site-footer__nav-link" to="/work/">Client Projects</g-link>
+      <g-link class="site-footer__nav-link" to="/work/">Personal Projects</g-link>
+      <g-link class="site-footer__nav-link" to="/work/">Testimonials</g-link>
+      <g-link class="site-footer__nav-link" to="/work/">CV (PDF)</g-link>
     </nav>
   </footer>
 </template>
@@ -70,15 +78,19 @@ export default {
   @include container;
   flex-wrap: wrap;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: calc(2rem - 0.5rem);
   align-items: center;
   margin-top: auto;
   background-color: rgba($c-primary, 0.025);
 }
 
-.site-footer__nav {
-  @include full-flex(row);
-  justify-content: flex-start;
+.site-footer__links {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
 .site-footer__link {
@@ -110,5 +122,31 @@ export default {
   @include full-flex;
   font-size: 13px;
   line-height: 1;
+}
+
+
+.site-footer__nav {
+  position: relative;
+  display: grid;
+  gap: 0;
+  max-width: 600px;
+  grid-template-columns: 1fr fit-content(50%);
+}
+
+.site-footer__nav-link {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: $c-white-text;
+  text-decoration: none;
+  margin-left: auto;
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  margin-right: 60px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 </style>

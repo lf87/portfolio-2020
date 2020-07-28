@@ -8,10 +8,11 @@
     <ul class="intro__passions-list" ref="passionsList">
       <li>Reusable Code</li>
       <li>Automation</li>
-      <li>Problem solving</li>
+      <li>Vanilla Javascript</li>
       <li>Accessibility</li>
       <li>Web Standards</li>
       <li>Semantics</li>
+      <li>Problem solving</li>
       <li>Responsive Web Design</li>
     </ul>
   </div>

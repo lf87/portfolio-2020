@@ -15,7 +15,6 @@
     <div :class="['hamburger-circle', { 'active': navActive }]"></div>
     <nav :class="['site-header__nav', { 'active': navActive }]">
       <g-link class="site-header__nav-link" to="/">Home</g-link>
-      <g-link class="site-header__nav-link" to="/about/">About</g-link>
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
       <!-- seperate sections for personal and client work -->
       <g-link class="site-header__nav-link" to="/work/">Client Projects</g-link>
