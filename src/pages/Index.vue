@@ -3,6 +3,27 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
     <Intro />
+    <div class="rich-text">
+      <p>Using the appropiate tools and processes Luke has created highly performt and visually pleasing websites for clients such as - Walmart, Asda, 188Bet, Coral, Co-op, and Jet2.</p>
+      <p>
+        Most recently he's been building web applications using his framework of choice
+        <a
+          target="vuejs"
+          rel="noreferrer noopener"
+          href="https://vuejs.org/"
+        >Vue.JS</a> - one of which was nominated for
+        <a
+          target="siteoftheyear"
+          rel="noreferrer noopener"
+          href="https://annual.awwwards.com/categories/mobile-site-of-the-year/british-sign-language-quiz"
+        >Mobile site of the year</a> on
+        <a
+          target="awwwards"
+          rel="noreferrer noopener"
+          href="https://annual.awwwards.com/"
+        >Awwwards.</a>
+      </p>
+    </div>
   </Layout>
 </template>
 

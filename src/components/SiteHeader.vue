@@ -2,7 +2,10 @@
   <header class="site-header">
     <strong class="site-header__site-name">
       <!-- <g-link class="header__site-name" to="/">{{ $static.metadata.siteName }}</g-link> -->
-      <g-link to="/">Luke Fryer - Web Developer</g-link>
+      <g-link to="/">
+        <span class="site-header__site-name-text">Luke Fryer - Web Dev</span>
+        <span class="site-header__site-name-text--hide-xs">eloper</span>
+      </g-link>
     </strong>
     <button :class="['hamburger', { 'active': navActive }]" aria-label="Open menu" @click="nav">
       <div class="hamburger__lines">
@@ -43,7 +46,7 @@ export default {
   @include container;
   flex-wrap: wrap;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   margin-bottom: 1.25em;
   margin-top: $page-top-bar-height;
   align-items: center;
@@ -51,12 +54,15 @@ export default {
 }
 
 .site-header__site-name {
-  margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
   flex-grow: 1;
 
   @include bp(xs) {
     margin-right: #{$gutter * 2};
+  }
+
+  @include bp(sm) {
+    margin-bottom: 0.5rem;
   }
 
   a {
@@ -69,6 +75,18 @@ export default {
   }
 }
 
+.site-header__site-name-text {
+  display: inline;
+}
+
+.site-header__site-name-text--hide-xs {
+  display: none;
+
+  @include bp(xxs) {
+    display: inline;
+  }
+}
+
 .site-header__nav {
   @include transition(opacity, 0.25s, $ease-in-out-cubic, 0s, true);
   text-align: center;
@@ -76,7 +94,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -117,13 +135,13 @@ export default {
     color: $c-white-text;
   }
 
-  &:hover {
-    color: rgba($c-mine-shaft, 0.85);
+  // &:hover {
+  //   color: rgba($c-mine-shaft, 0.85);
 
-    @include bp(sm) {
-      color: $c-white;
-    }
-  }
+  //   @include bp(sm) {
+  //     color: $c-white;
+  //   }
+  // }
 
   &::before {
     content: "";
@@ -136,14 +154,19 @@ export default {
   }
 
   &:hover {
+    color: $c-mine-shaft;
+
     &::before {
-      display: block;
-      background-color: rgba($c-primary, 0.25);
+      @include bp(sm) {
+        display: block;
+        background-color: rgba($c-white, 1);
+      }
     }
   }
 
   &.active--exact {
     color: $c-white;
+    cursor: default;
 
     &::before {
       display: block;
@@ -161,35 +184,24 @@ export default {
   width: 50px;
   height: 50px;
   border: 0;
-  position: absolute;
-  top: $gutter;
+  position: fixed;
+  top: calc(2rem - 12px + #{$page-top-bar-height});
   right: $gutter;
   outline: none;
-  transform-origin: 75% 25%;
-  transform: scale3d(1, 1, 1);
   background-color: transparent;
-  border: 2px $c-primary solid;
   z-index: $z-hamburger;
   cursor: pointer;
 }
 
 .hamburger-circle {
-  @include transition(
-    transform background-color,
-    0.25s,
-    $ease-in-out-cubic,
-    0s,
-    true
-  );
-  background-color: $c-secondary;
+  @include transition(transform, 0.25s, $ease-in-out-cubic, 0s, true);
   border-radius: 50%;
-  width: calc(50px - 4px);
-  height: calc(50px - 4px);
-  position: absolute;
-  top: calc(#{$gutter} + 2px);
-  right: calc(#{$gutter} + 2px);
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: calc(2rem - 12px + #{$page-top-bar-height});
+  right: $gutter;
   transform-origin: 75% 25%;
-  transform: scale3d(1, 1, 1);
   // background-color: rgba($c-secondary, 0.1);
   background-color: $c-primary;
   pointer-events: none;
@@ -207,7 +219,7 @@ export default {
   background-color: $c-white;
   height: 4px;
   position: absolute;
-  top: calc(50% - 2px;);
+  top: calc(50% - 2px);
   left: 10px;
   width: calc(100% - 20px);
   border-radius: 3px;
@@ -241,12 +253,12 @@ export default {
   }
 
   &::before {
-    transform: translateX(100%);
+    transform: translateX(50%);
 
     opacity: 0;
   }
   &::after {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

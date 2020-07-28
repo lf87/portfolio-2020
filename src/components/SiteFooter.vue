@@ -73,7 +73,7 @@ export default {
   padding-bottom: 2rem;
   align-items: center;
   margin-top: auto;
-  background-color: rgba($c-secondary, 0.1);
+  background-color: rgba($c-primary, 0.025);
 }
 
 .site-footer__nav {

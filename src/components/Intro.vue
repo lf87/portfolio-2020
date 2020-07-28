@@ -1,32 +1,10 @@
 <template>
-  <section class="intro">
+  <div class="intro">
     <h1 class="intro__heading heading">
-      A meticulous web developer with 9+ years of industry experience and a passion for:
+      <span class="intro__heading-text">A meticulous web developer with 9+ years of industry experience and a passion for: </span>
       <br />
-      <span class="intro__passions" ref="passions">Responsive Web Design</span>
+      <span class="intro__heading-text intro__heading-text--passions" ref="passions">Responsive Web Design</span>
     </h1>
-
-    <div class="intro__copy">
-      <p>Using the appropiate tools and processes he has created highly performt and visually pleasing websites for clients such as - Walmart, Asda, 188Bet, Coral, Co-op, and Jet2.</p>
-      <p>
-        Most recently he's been building web applications using his framework of choice
-        <a
-          target="vuejs"
-          rel="noreferrer noopener"
-          href="https://vuejs.org/"
-        >Vue.JS</a> - one of which was nominated for
-        <a
-          target="siteoftheyear"
-          rel="noreferrer noopener"
-          href="https://annual.awwwards.com/categories/mobile-site-of-the-year/british-sign-language-quiz"
-        >Mobile site of the year</a> on
-        <a
-          target="awwwards"
-          rel="noreferrer noopener"
-          href="https://annual.awwwards.com/"
-        >Awwwards.</a>
-      </p>
-    </div>
     <ul class="intro__passions-list" ref="passionsList">
       <li>Reusable Code</li>
       <li>Automation</li>
@@ -36,7 +14,7 @@
       <li>Semantics</li>
       <li>Responsive Web Design</li>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -80,17 +58,20 @@ export default {
 <style lang="scss" scoped>
 .intro {
   @include full-flex;
-  @include container;
-  margin-bottom: 4rem;
-
 }
 
 .intro__heading {
-  @include font-size(22px);
-  max-width: 22rem;
+  @include font-size(23px);
+  margin-bottom: 2em;
+  max-width: 40rem;
 }
 
-.intro__passions {
+.intro__heading-text {
+  display: inline;
+}
+
+.intro__heading-text--passions {
+  display: inline;
   color: $c-primary;
 }
 

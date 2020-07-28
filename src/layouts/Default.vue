@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <SiteHeader />
-    <slot />
+    <main class="main">
+      <slot />
+    </main>
     <SiteFooter />
   </div>
 </template>
@@ -44,13 +46,6 @@ dd {
   margin: 0;
 }
 
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
 ul[class],
 ol[class] {
   list-style: none;
@@ -72,15 +67,6 @@ select {
   font: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 html {
   @include font-size(17px);
   height: 100%;
@@ -92,6 +78,10 @@ body {
   background-repeat: repeat;
   color: $c-white-text;
   font-family: $f-rubik-regular;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  min-width: 320px;
 
   &::before {
     content: "";
@@ -105,32 +95,85 @@ body {
 }
 
 .heading {
-  color: $c-white;
   font-family: $f-rubik-bold;
   margin-bottom: 1em;
   letter-spacing: 0.25px;
 }
 
-p {
-  @include font-size(16px);
-  margin-bottom: 1em;
+.heading--large {
+  @include font-size(28px);
+  margin-top: 1em;
+}
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+.heading--medium {
+  @include font-size(24px);
+  margin-top: 1em;
+}
 
-  a {
-    color: $c-white-text;
-
-    &:hover {
-      color: $c-white;
-    }
-  }
+.heading--small {
+  @include font-size(18px);
+  margin-top: 1em;
 }
 
 .layout {
   @include full-flex;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.main {
+  @include container;
+  margin-bottom: 4rem;
+}
+
+.rich-text {
+  @include full-flex;
+
+  p {
+    @include font-size(16px);
+    margin-bottom: 1em;
+
+    a {
+      color: $c-white-text;
+
+      &:hover {
+        color: $c-white;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    // margin-bottom: 1.5em;
+  }
+
+  h3 {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.lists {
+  @include full-flex(row);
+  display: grid;
+  gap: $gutter;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  h2 {
+    width: 100%;
+  }
+
+  ul {
+    // flex: 1;
+  }
 }
 </style>
