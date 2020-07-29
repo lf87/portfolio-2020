@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{odGf:function(t,e,n){"use strict";n.r(e);var i={metaInfo:{title:"About me"}},o=n("KHd+"),s=Object(o.a)(i,(function(){var t=this.$createElement,e=this._self._c||t;return e("Layout",[e("h1",[this._v("About me")]),e("br"),e("p",[this._v("I'm dead inside.                  ")])])}),[],!1,null,null,null);e.default=s.exports}}]);
