@@ -13,7 +13,7 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
-  components: { SiteHeader, SiteFooter }
+  components: { SiteHeader, SiteFooter },
 }
 </script>
 
@@ -74,7 +74,7 @@ html {
 
 body {
   background-color: $c-mine-shaft;
-  background-image: url("../assets/img/bg.png");
+  background-image: url('../assets/img/bg.png');
   background-repeat: repeat;
   color: $c-white-text;
   font-family: $f-rubik-regular;
@@ -84,7 +84,7 @@ body {
   min-width: 320px;
 
   &::before {
-    content: "";
+    content: '';
     height: $page-top-bar-height;
     width: 100%;
     position: absolute;
@@ -123,22 +123,27 @@ body {
 
 .main {
   @include container;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .rich-text {
   @include full-flex;
+  margin-bottom: 2rem;
 
   p {
     @include font-size(16px);
     margin-bottom: 1em;
+  }
 
-    a {
-      color: $c-white-text;
+  a {
+    color: $c-white-text;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-color: $c-primary;
 
-      &:hover {
-        color: $c-white;
-      }
+    &:hover {
+      color: $c-primary;
     }
   }
 

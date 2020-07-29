@@ -1,9 +1,16 @@
 <template>
   <div class="intro">
     <h1 class="intro__heading heading">
-      <span class="intro__heading-text">A meticulous web developer with 9+ years of industry experience and a passion for: </span>
+      <span class="intro__heading-text"
+        >A meticulous web developer with 9+ years of industry experience and a
+        passion for:
+      </span>
       <br />
-      <span class="intro__heading-text intro__heading-text--passions" ref="passions">Responsive Web Design</span>
+      <span
+        class="intro__heading-text intro__heading-text--passions"
+        ref="passions"
+        >Responsive Web Design</span
+      >
     </h1>
     <ul class="intro__passions-list" ref="passionsList">
       <li>Reusable Code</li>
@@ -26,12 +33,12 @@ gsap.registerPlugin(TextPlugin)
 
 export default {
   name: 'Intro',
-  mounted () {
+  mounted() {
     // Create timeline
     const tlSwitch = gsap.timeline({
       onComplete: function () {
         this.restart()
-      }
+      },
     })
 
     this.$refs.passionsList.childNodes.forEach((el) => {
@@ -49,10 +56,10 @@ export default {
       tlSwitch.to(this.$refs.passions, duration, {
         text: text,
         delay: 1.5,
-        ease: 'none'
+        ease: 'none',
       })
     })
-  }
+  },
 }
 </script>
 

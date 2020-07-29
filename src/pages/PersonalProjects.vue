@@ -17,9 +17,8 @@ import personalProjects from '~/data/personal-projects.json'
 
 export default {
   metaInfo: {
-    title: 'Personal Projects | Luke Fryer - Front End Developer'
+    title: 'Personal Projects | Luke Fryer - Front End Developer',
   },
-  components: { Projects }
+  components: { Projects },
 }
 </script>
-

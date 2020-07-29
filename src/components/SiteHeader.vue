@@ -7,18 +7,28 @@
         <span class="site-header__site-name-text--hide-xs">eloper</span>
       </g-link>
     </strong>
-    <button :class="['hamburger', { 'active': navActive }]" aria-label="Open menu" @click="nav">
+    <button
+      :class="['hamburger', { active: navActive }]"
+      aria-label="Open menu"
+      @click="nav"
+    >
       <div class="hamburger__lines">
         <div class="hamburger__line"></div>
       </div>
     </button>
-    <div :class="['hamburger-circle', { 'active': navActive }]"></div>
-    <nav :class="['site-header__nav', { 'active': navActive }]">
+    <div :class="['hamburger-circle', { active: navActive }]"></div>
+    <nav :class="['site-header__nav', { active: navActive }]">
       <g-link class="site-header__nav-link" to="/">Home</g-link>
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
-      <g-link class="site-header__nav-link" to="/client-projects/">Client Projects</g-link>
-      <g-link class="site-header__nav-link" to="/personal-projects/">Personal Projects</g-link>
-      <g-link class="site-header__nav-link" to="/testimonials/">Testimonials</g-link>
+      <g-link class="site-header__nav-link" to="/client-projects/"
+        >Client Projects</g-link
+      >
+      <g-link class="site-header__nav-link" to="/personal-projects/"
+        >Personal Projects</g-link
+      >
+      <g-link class="site-header__nav-link" to="/testimonials/"
+        >Testimonials</g-link
+      >
       <g-link class="site-header__nav-link" to="/cv/">CV (PDF)</g-link>
     </nav>
   </header>
@@ -28,12 +38,12 @@
 export default {
   name: 'SiteHeader',
   data: () => ({
-    navActive: false
+    navActive: false,
   }),
   methods: {
-    nav () {
-      !this.navActive ? this.navActive = true : this.navActive = false
-    }
+    nav() {
+      !this.navActive ? (this.navActive = true) : (this.navActive = false)
+    },
   },
 }
 </script>
@@ -142,7 +152,7 @@ export default {
   // }
 
   &::before {
-    content: "";
+    content: '';
     display: none;
     position: absolute;
     bottom: 0;
@@ -232,7 +242,7 @@ export default {
 
 .hamburger__lines::before,
 .hamburger__lines::after {
-  content: "";
+  content: '';
   top: calc(50% - 2px - 8px);
   width: 100%;
   left: 0;

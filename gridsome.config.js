@@ -6,13 +6,12 @@
 
 const path = require('path')
 
-function addStyleResource (rule) {
-  rule.use('style-resource')
+function addStyleResource(rule) {
+  rule
+    .use('style-resource')
     .loader('style-resources-loader')
     .options({
-      patterns: [
-        path.resolve(__dirname, './src/assets/scss/_style.scss'),
-      ],
+      patterns: [path.resolve(__dirname, './src/assets/scss/_style.scss')],
     })
 }
 
@@ -32,18 +31,18 @@ module.exports = {
         statusBarStyle: 'default',
         themeColor: '#666600',
         backgroundColor: '#ffffff',
-        icon: './src/assets/img/temp.png'
-      }
-    }
+        icon: './src/assets/img/temp.png',
+      },
+    },
   ],
   siteUrl: 'https://lf20.github.io',
   pathPrefix: '/',
-  chainWebpack (config) {
+  chainWebpack(config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 
-    types.forEach(type => {
+    types.forEach((type) => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-  }
+  },
 }
