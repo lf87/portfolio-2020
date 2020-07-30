@@ -1,80 +1,80 @@
 {
-  "name": "Gridsome",
+  "name": "Luke Fryer - Web Developer",
   "short_name": "Gridsome",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#666600",
+  "theme_color": "#b65474",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "assets\\static\\temp-512x512.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-512x512.svg",
+      "type": "image/svg",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-384x384.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-384x384.svg",
+      "type": "image/svg",
       "sizes": "384x384",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-192x192.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-192x192.svg",
+      "type": "image/svg",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-180x180.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-180x180.svg",
+      "type": "image/svg",
       "sizes": "180x180",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-152x152.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-152x152.svg",
+      "type": "image/svg",
       "sizes": "152x152",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-144x144.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-144x144.svg",
+      "type": "image/svg",
       "sizes": "144x144",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-128x128.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-128x128.svg",
+      "type": "image/svg",
       "sizes": "128x128",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-120x120.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-120x120.svg",
+      "type": "image/svg",
       "sizes": "120x120",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-96x96.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-96x96.svg",
+      "type": "image/svg",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-72x72.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-72x72.svg",
+      "type": "image/svg",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-48x48.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-48x48.svg",
+      "type": "image/svg",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "assets\\static\\temp-16x16.png",
-      "type": "image/png",
+      "src": "assets\\static\\logo-16x16.svg",
+      "type": "image/svg",
       "sizes": "16x16",
       "purpose": "any"
     }
