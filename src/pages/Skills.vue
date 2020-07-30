@@ -11,8 +11,8 @@
         One of my skills is being able to take a holistic view of a project and
         spot any potential pitfalls that could later incur technical debt. The
         majority of my builds are modular - using Atomic/DRY principles, and
-        employ BEM for naming conventions. I'm always keen to expolore new tools
-        and processes that help improve overall effciency.
+        employ BEM for naming conventions. I'm always keen to explore new tools
+        and processes that help improve overall efficiency.
       </p>
       <h2 class="heading heading--medium">Key Skills</h2>
       <div class="lists">
@@ -56,7 +56,7 @@
         <div class="lists__item">
           <h3 class="heading heading--small">CMS/CRM</h3>
           <ul>
-            <li>Wordpress</li>
+            <li>Wordpress theme development</li>
             <li>Ektron (Certified Administrator)</li>
             <li>Oracle Responsys</li>
             <li>Dotmailer</li>
@@ -72,7 +72,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Skills',
+    title: 'Skills | Luke Fryer - Front End Developer',
   },
 }
 </script>

@@ -37,7 +37,7 @@
     {
       "name": "Jane Tomlinson Appeal",
       "year": "2019",
-      "copy": "A charity dedicated to helping children with cancer. Worked on the front end to create reusable HTML modules for integration in to Umbraco by the back end developer.",
+      "copy": "A charity dedicated to helping children with cancer. Worked on the front end to create reusable HTML modules for integration into Umbraco by the back end developer.",
       "url": "https://www.janetomlinsonappeal.com/",
       "techStack": [
         1,
@@ -50,7 +50,7 @@
     {
       "name": "Insurance2go",
       "year": "2020",
-      "copy": "Instant quotes and insurance for mobile phones. Worked on the front end to create reusable HTML modules for integration in to Umbraco by the back end developer.",
+      "copy": "Instant quotes and insurance for mobile phones. Worked on the front end to create reusable HTML modules for integration into Umbraco by the back end developer.",
       "url": "https://www.insurance2go.co.uk/",
       "techStack": [
         1,
@@ -75,7 +75,7 @@
     {
       "name": "Zephyr Home Loans",
       "year": "2017",
-      "copy": "A WordPress site for a buy-to-let lender for mortgage intermediaires. Built from scratch using Advanced Custom Fields.",
+      "copy": "A WordPress site for a buy-to-let lender for mortgage intermediaries. Built from scratch using Advanced Custom Fields.",
       "url": "https://zephyrhomeloans.co.uk/",
       "techStack": [
         1,

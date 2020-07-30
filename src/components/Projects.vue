@@ -6,6 +6,7 @@
       </h2>
       <div class="rich-text">
         <p>{{ item.copy }}</p>
+        <a v-if="item.url" :target="`repo${index}`" :href="item.url">Website</a>
         <a v-if="item.repoUrl" :target="`repo${index}`" :href="item.repoUrl">Repository</a>
       </div>
       <div class="projects__logos">
@@ -42,12 +43,11 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  // @include full-flex;
   position: relative;
   width: 100%;
   display: grid;
   gap: $gutter;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   h2 {
     margin-top: 0;
@@ -76,6 +76,8 @@ export default {
   display: block;
   position: relative;
 
+  &:focus,
+  &:active,
   &:hover {
     .projects__tooltip {
       opacity: 1;

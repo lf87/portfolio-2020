@@ -5,8 +5,8 @@
     <Intro />
     <div class="rich-text">
       <p>
-        Using the appropiate tools and processes Luke has created highly
-        performt and visually pleasing websites for clients such as - Walmart,
+        Using the appropriate tools and processes Luke has created highly
+        performant and visually pleasing websites for clients such as - Walmart,
         Asda, 188Bet, Coral, Co-op, and Jet2.
       </p>
       <p>

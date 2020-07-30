@@ -70,6 +70,18 @@ select {
 html {
   @include font-size(17px);
   height: 100%;
+
+  @include bp(xs) {
+    @include font-size(18px);
+  }
+
+  @include bp(lg) {
+    @include font-size(21px);
+  }
+
+  @include bp(xl) {
+    @include font-size(22px);
+  }
 }
 
 body {
@@ -101,20 +113,13 @@ body {
 
   a {
     color: $c-white-text;
-    color: $c-primary;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-decoration-color: $c-primary;
-
-    &:hover {
-      color: $c-primary;
-    }
+    text-decoration: none;
   }
 }
 
 .heading--large {
   @include font-size(28px);
+  margin-bottom: 1.5em;
 }
 
 .heading--medium {
@@ -155,12 +160,14 @@ body {
   }
 
   a {
-    color: $c-primary;
+    color: $c-white-text;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     text-decoration-color: $c-primary;
 
+    &:focus,
+    &:active,
     &:hover {
       color: $c-primary;
     }

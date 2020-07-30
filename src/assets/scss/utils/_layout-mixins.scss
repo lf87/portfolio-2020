@@ -40,7 +40,13 @@
 
 // @include bp-horizontal-xs
 @mixin bp-horizontal-xs {
-  @media only screen and (max-height: 400px) {
+  @media only screen and (max-height: 440px) {
+    @content;
+  }
+}
+
+@mixin bp-horizontal-xxs {
+  @media only screen and (max-height: 360px) {
     @content;
   }
 }

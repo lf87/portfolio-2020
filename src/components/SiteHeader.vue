@@ -18,6 +18,7 @@
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
       <g-link class="site-header__nav-link" to="/client-projects/">Client Projects</g-link>
       <g-link class="site-header__nav-link" to="/personal-projects/">Personal Projects</g-link>
+      <g-link class="site-header__nav-link" to="/testimonials/">Testimonials</g-link>
       <g-link class="site-header__nav-link" to="/cv/">CV</g-link>
     </nav>
   </header>
@@ -124,7 +125,6 @@ export default {
 
 .site-header__nav-link {
   @include font-size(24px);
-  @include remove-highlight;
   font-family: $f-rubik-bold;
   color: $c-white;
   text-decoration: none;
@@ -134,7 +134,7 @@ export default {
   position: relative;
 
   @include bp(md) {
-    @include font-size(15px);
+    @include font-size(14px);
     font-family: $f-rubik-medium;
     padding-top: 0.66em;
     padding-right: 1rem;
@@ -143,9 +143,17 @@ export default {
     color: $c-white-text;
   }
 
-  &:hover {
-    //   color: rgba($c-mine-shaft, 0.85);
+  @include bp-horizontal-xs {
+    @include font-size(20px);
+  }
 
+  @include bp-horizontal-xxs {
+    @include font-size(17px);
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
     @include bp(md) {
       color: $c-white;
     }

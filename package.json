@@ -1,5 +1,6 @@
 {
-  "name": "lf20",
+  "name": "luke-fryer-web-developer",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "gridsome build",
