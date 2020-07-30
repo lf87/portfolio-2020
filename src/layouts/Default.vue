@@ -1,9 +1,11 @@
 <template>
   <div class="layout">
     <SiteHeader />
-    <main class="main">
-      <slot />
-    </main>
+    <transition name="fade" appear>
+      <main class="main">
+        <slot />
+      </main>
+    </transition>
     <SiteFooter />
   </div>
 </template>
@@ -201,9 +203,17 @@ body {
   h2 {
     width: 100%;
   }
+}
 
-  ul {
-    // flex: 1;
-  }
+// Page transitions
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s $ease-out-expo;
 }
 </style>
