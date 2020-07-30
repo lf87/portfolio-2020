@@ -2,7 +2,7 @@
   {
     "name": "Luke Fryer - Photographer",
     "year": "2020",
-    "copy": "I wanted to create a place online where I go to view my photographs without having to rely on social media, and the lockdown of 2020 provided the perfect opportunity for me to do this. This was the my project where I discovered the power of VueJS's built in state transitions.",
+    "copy": "I wanted to create a place online where I go to view my photographs without having to rely on social media, and the lockdown of 2020 provided the perfect opportunity for me to do this.",
     "url": "https://lukes.photos/",
     "repoUrl": "https://github.com/lf87/luke-fryer-photography",
     "techStack": [
