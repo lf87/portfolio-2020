@@ -4,7 +4,7 @@
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
       <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
       <div class="rich-text">
-        <p>Client projects</p>
+        <p>Client Projects</p>
       </div>
       <Projects :projectData="personalProjects" :logosData="logos" />
     </section>

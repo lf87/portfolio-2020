@@ -7,11 +7,7 @@
         <span class="site-header__site-name-text--hide-xs">eloper</span>
       </g-link>
     </strong>
-    <button
-      :class="['hamburger', { active: navActive }]"
-      aria-label="Open menu"
-      @click="nav"
-    >
+    <button :class="['hamburger', { active: navActive }]" aria-label="Open menu" @click="nav">
       <div class="hamburger__lines">
         <div class="hamburger__line"></div>
       </div>
@@ -20,16 +16,9 @@
     <nav :class="['site-header__nav', { active: navActive }]">
       <g-link class="site-header__nav-link" to="/">Home</g-link>
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
-      <g-link class="site-header__nav-link" to="/client-projects/"
-        >Client Projects</g-link
-      >
-      <g-link class="site-header__nav-link" to="/personal-projects/"
-        >Personal Projects</g-link
-      >
-      <g-link class="site-header__nav-link" to="/testimonials/"
-        >Testimonials</g-link
-      >
-      <g-link class="site-header__nav-link" to="/cv/">CV (PDF)</g-link>
+      <g-link class="site-header__nav-link" to="/client-projects/">Client Projects</g-link>
+      <g-link class="site-header__nav-link" to="/personal-projects/">Personal Projects</g-link>
+      <g-link class="site-header__nav-link" to="/cv/">CV</g-link>
     </nav>
   </header>
 </template>
@@ -41,7 +30,7 @@ export default {
     navActive: false,
   }),
   methods: {
-    nav() {
+    nav () {
       !this.navActive ? (this.navActive = true) : (this.navActive = false)
     },
   },
@@ -63,13 +52,13 @@ export default {
 
 .site-header__site-name {
   letter-spacing: 0.5px;
-  flex-grow: 1;
 
   @include bp(xs) {
     margin-right: #{$gutter * 2};
+    flex-grow: 1;
   }
 
-  @include bp(sm) {
+  @include bp(md) {
     margin-bottom: 0.5rem;
   }
 
@@ -110,17 +99,26 @@ export default {
   opacity: 0;
   pointer-events: none;
 
-  &.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  @include bp(sm) {
+  @include bp(md) {
+    transition: none;
+    text-align: left;
+    top: initial;
+    left: initial;
+    width: auto;
+    height: auto;
     margin-top: 0.5em;
     margin-bottom: 1rem;
     margin-left: -0.5rem;
-    flex-basis: 0;
-    position: absolute;
+    position: relative;
+    opacity: 1;
+    pointer-events: all;
+    flex-direction: row;
+    will-change: initial;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -135,21 +133,23 @@ export default {
   text-shadow: 1px 2px 3px rgba($c-black, 0.15);
   position: relative;
 
-  @include bp(sm) {
+  @include bp(md) {
+    @include font-size(15px);
+    font-family: $f-rubik-medium;
     padding-top: 0.66em;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     padding-bottom: 0.66em;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     color: $c-white-text;
   }
 
-  // &:hover {
-  //   color: rgba($c-mine-shaft, 0.85);
+  &:hover {
+    //   color: rgba($c-mine-shaft, 0.85);
 
-  //   @include bp(sm) {
-  //     color: $c-white;
-  //   }
-  // }
+    @include bp(md) {
+      color: $c-white;
+    }
+  }
 
   &::before {
     content: '';
@@ -164,10 +164,14 @@ export default {
   &:hover {
     color: $c-mine-shaft;
 
+    @include bp(md) {
+      color: $c-white-text;
+    }
+
     &::before {
-      @include bp(sm) {
+      @include bp(md) {
         display: block;
-        background-color: rgba($c-white, 1);
+        background-color: rgba($c-white, 0.5);
       }
     }
   }
@@ -199,6 +203,10 @@ export default {
   background-color: transparent;
   z-index: $z-hamburger;
   cursor: pointer;
+
+  @include bp(md) {
+    display: none;
+  }
 }
 
 .hamburger-circle {
@@ -213,6 +221,10 @@ export default {
   // background-color: rgba($c-secondary, 0.1);
   background-color: $c-primary;
   pointer-events: none;
+
+  @include bp(md) {
+    display: none;
+  }
 
   &.active {
     transform: scale3d(40, 40, 40);
@@ -231,6 +243,10 @@ export default {
   left: 10px;
   width: calc(100% - 20px);
   border-radius: 3px;
+
+  @include bp(md) {
+    display: none;
+  }
 }
 
 .hamburger__line {
@@ -238,6 +254,10 @@ export default {
   left: 0;
   width: 100%;
   z-index: 10;
+
+  @include bp(md) {
+    display: none;
+  }
 }
 
 .hamburger__lines::before,
@@ -246,6 +266,10 @@ export default {
   top: calc(50% - 2px - 8px);
   width: 100%;
   left: 0;
+
+  @include bp(md) {
+    display: none;
+  }
 }
 
 .hamburger__lines::after {
@@ -254,6 +278,7 @@ export default {
 
 .hamburger.active .hamburger__lines {
   transform: rotate(45deg);
+
   &::before,
   &::after {
     top: calc(50% - 2px);

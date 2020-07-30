@@ -33,5 +33,10 @@
     "id": "gulp",
     "text": "Gulp",
     "viewbox": "0 0 5105.4 5105.4"
+  },
+  {
+    "id": "wordpress",
+    "text": "Wordpress",
+    "viewbox": "0 0 5105.4 5105.4"
   }
 ]

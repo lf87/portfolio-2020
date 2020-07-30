@@ -13,13 +13,4 @@ This is the project you get when you run `gridsome create new-project`.
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-### Project notes
-
-For ref for the tech stack logos:
-0 sass
-1 bem
-2 gsap
-4 nunjucks
-5 webpack
-6 vuejs
-7 gulp
+MENU FADE WHEN RESIZE TO SMALL

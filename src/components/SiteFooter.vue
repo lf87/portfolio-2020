@@ -76,10 +76,7 @@
       <g-link class="site-footer__nav-link" to="/personal-projects/"
         >Personal Projects</g-link
       >
-      <g-link class="site-footer__nav-link" to="/testimonials/"
-        >Testimonials</g-link
-      >
-      <g-link class="site-footer__nav-link" to="/cv/">CV (PDF)</g-link>
+      <g-link class="site-footer__nav-link" to="/cv/">CV</g-link>
     </nav>
   </footer>
 </template>
@@ -99,7 +96,7 @@ export default {
   padding-bottom: calc(2rem - 0.5rem);
   align-items: center;
   margin-top: auto;
-  background-color: rgba($c-primary, 0.025);
+  background-color: rgba($c-black, 0.05);
 }
 
 .site-footer__links {

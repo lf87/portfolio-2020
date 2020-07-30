@@ -98,11 +98,23 @@ body {
   font-family: $f-rubik-bold;
   margin-bottom: 1em;
   letter-spacing: 0.25px;
+
+  a {
+    color: $c-white-text;
+    color: $c-primary;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-color: $c-primary;
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
 }
 
 .heading--large {
   @include font-size(28px);
-  margin-top: 1em;
 }
 
 .heading--medium {
@@ -123,12 +135,19 @@ body {
 
 .main {
   @include container;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  background-color: $c-mine-shaft;
+  background-image: url('../assets/img/bg.png');
+  background-repeat: repeat;
 }
 
 .rich-text {
   @include full-flex;
   margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   p {
     @include font-size(16px);
@@ -136,7 +155,7 @@ body {
   }
 
   a {
-    color: $c-white-text;
+    color: $c-primary;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
