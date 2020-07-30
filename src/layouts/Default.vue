@@ -159,6 +159,7 @@ body {
   p {
     @include font-size(16px);
     margin-bottom: 1em;
+    max-width: 100%;
   }
 
   a {

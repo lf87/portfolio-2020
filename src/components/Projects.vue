@@ -47,7 +47,12 @@ export default {
   width: 100%;
   display: grid;
   gap: $gutter;
+  grid-template-columns: repeat(auto-fit, 1fr);
+
+  @include bp(xs) {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  }
 
   h2 {
     margin-top: 0;
