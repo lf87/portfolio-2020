@@ -17,6 +17,7 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: 'Luke Fryer Web Developer',
+  icon: './src/assets/img/logo.svg',
   plugins: [
     {
       use: 'gridsome-plugin-pwa',
