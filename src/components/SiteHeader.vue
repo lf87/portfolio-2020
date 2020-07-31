@@ -7,7 +7,11 @@
         <span class="site-header__site-name-text--hide-xs">eloper</span>
       </g-link>
     </strong>
-    <button :class="['hamburger', { active: navActive }]" aria-label="Open menu" @click="nav">
+    <button
+      :class="['hamburger', { active: navActive }]"
+      aria-label="Open menu"
+      @click="nav"
+    >
       <div class="hamburger__lines">
         <div class="hamburger__line"></div>
       </div>
@@ -16,10 +20,16 @@
     <nav :class="['site-header__nav', { active: navActive }]">
       <g-link class="site-header__nav-link" to="/">Home</g-link>
       <g-link class="site-header__nav-link" to="/skills/">Skills</g-link>
-      <g-link class="site-header__nav-link" to="/client-projects/">Client Projects</g-link>
-      <g-link class="site-header__nav-link" to="/personal-projects/">Personal Projects</g-link>
-      <g-link class="site-header__nav-link" to="/testimonials/">Testimonials</g-link>
-      <g-link class="site-header__nav-link" to="/cv/">CV</g-link>
+      <g-link class="site-header__nav-link" to="/client-projects/"
+        >Client Projects</g-link
+      >
+      <g-link class="site-header__nav-link" to="/personal-projects/"
+        >Personal Projects</g-link
+      >
+      <g-link class="site-header__nav-link" to="/testimonials/"
+        >Testimonials</g-link
+      >
+      <a class="site-footer__nav-link" target="cv" href="/cv.pdf">CV</a>
     </nav>
   </header>
 </template>
@@ -31,7 +41,7 @@ export default {
     navActive: false,
   }),
   methods: {
-    nav () {
+    nav() {
       !this.navActive ? (this.navActive = true) : (this.navActive = false)
     },
   },

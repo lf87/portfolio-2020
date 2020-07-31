@@ -14,15 +14,43 @@
           />
         </svg>
         <div class="rich-text">
-          <p>Most of my time working as a developer at Home, I was sat next to Luke, meaning I not only got to know him as a person, but got to see first hand how skilled he is as a front end developer.</p>
+          <p>
+            Most of my time working as a developer at Home, I was sat next to
+            Luke, meaning I not only got to know him as a person, but got to see
+            first hand how skilled he is as a front end developer.
+          </p>
 
-          <p>Initially hired to enter content into WordPress, Drupal and Ektron systems, once we found out that he was a self taught developer, we gave him a chance to do some email and landing page development.</p>
+          <p>
+            Initially hired to enter content into WordPress, Drupal and Ektron
+            systems, once we found out that he was a self taught developer, we
+            gave him a chance to do some email and landing page development.
+          </p>
 
-          <p>From there, he often took the lead on WordPress builds, and was at the forefront of projects such as ADSA Extra Special, Jet2.com Eggstream Heatwave, amongst many other big projects, working on HTML, CSS and JavaScript.</p>
+          <p>
+            From there, he often took the lead on WordPress builds, and was at
+            the forefront of projects such as ADSA Extra Special, Jet2.com
+            Eggstream Heatwave, amongst many other big projects, working on
+            HTML, CSS and JavaScript.
+          </p>
 
-          <p>Always looking to make us more efficient, Luke produced multiple task runners to make the development of websites and emails quicker and easier using the likes of Gulp, Webpack, Sass, and other tools to improve everything he possibly could. When we told him that it would be cool if this sort of thing could be used for developing WordPress themes, he took it upon himself to rewrite what he had done to make it work and the team used it constantly over the next few years because of how easy Luke had made it.</p>
+          <p>
+            Always looking to make us more efficient, Luke produced multiple
+            task runners to make the development of websites and emails quicker
+            and easier using the likes of Gulp, Webpack, Sass, and other tools
+            to improve everything he possibly could. When we told him that it
+            would be cool if this sort of thing could be used for developing
+            WordPress themes, he took it upon himself to rewrite what he had
+            done to make it work and the team used it constantly over the next
+            few years because of how easy Luke had made it.
+          </p>
 
-          <p>Having seen some of the work Luke has gone on to work on over the years since leaving Home, he has only improved his knowledge even further, and it's great to see him always looking to make things easier, and he continues to help me when I need someone to bounce an idea off.</p>
+          <p>
+            Having seen some of the work Luke has gone on to work on over the
+            years since leaving Home, he has only improved his knowledge even
+            further, and it's great to see him always looking to make things
+            easier, and he continues to help me when I need someone to bounce an
+            idea off.
+          </p>
         </div>
         <footer class="testimonials__footer">
           <cite>Sam Kirkbride,</cite>
@@ -41,7 +69,13 @@
           />
         </svg>
         <div class="rich-text">
-          <p>Unassuming, Luke's a solid, dependable front-end developer, who will take whatever he is given and turn it around. He's already keen and proactively looks at educating himself and alternative solutions. Luke will progress with more challenges and the space to think through and solve those problems.</p>
+          <p>
+            Unassuming, Luke's a solid, dependable front-end developer, who will
+            take whatever he is given and turn it around. He's already keen and
+            proactively looks at educating himself and alternative solutions.
+            Luke will progress with more challenges and the space to think
+            through and solve those problems.
+          </p>
           <p>Funny chap as well - great dry sense of humour.</p>
         </div>
         <footer class="testimonials__footer">

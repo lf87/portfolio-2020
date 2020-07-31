@@ -24,12 +24,16 @@
             <li>UX and Accessibility</li>
             <li>Progressive Web Apps</li>
             <li>Workflow automation</li>
+            <li>AA level accessibility</li>
             <li>Cross-browser Compatibility</li>
             <li>SEO and Semantic code</li>
             <li>Standards Compliance</li>
-            <li>HTML5 Canvas</li>
             <li>Site optimisation</li>
+            <li>Quoting / Time estimates</li>
+            <li>Functional Programming</li>
             <li>HTML Emails</li>
+            <li>Progressive enhancement</li>
+            <li>Graceful degradation</li>
             <li>IE7+ Compatibility 😩</li>
           </ul>
         </div>

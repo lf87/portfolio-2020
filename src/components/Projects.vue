@@ -1,16 +1,26 @@
 <template>
   <div class="projects">
-    <div class="projects__project" :key="item[index]" v-for="(item, index) in projectData">
+    <div
+      class="projects__project"
+      :key="item[index]"
+      v-for="(item, index) in projectData"
+    >
       <h2 class="heading heading--medium">
         <a :target="`project${index}`" :href="item.url">{{ item.name }}</a>
       </h2>
       <div class="rich-text">
         <p>{{ item.copy }}</p>
         <a v-if="item.url" :target="`repo${index}`" :href="item.url">Website</a>
-        <a v-if="item.repoUrl" :target="`repo${index}`" :href="item.repoUrl">Repository</a>
+        <a v-if="item.repoUrl" :target="`repo${index}`" :href="item.repoUrl"
+          >Repository</a
+        >
       </div>
       <div class="projects__logos">
-        <div class="projects__logo" :key="tech[index]" v-for="(tech, index) in item.techStack">
+        <div
+          class="projects__logo"
+          :key="tech[index]"
+          v-for="(tech, index) in item.techStack"
+        >
           <svg
             :aria-label="logosData[tech].text"
             :viewBox="logosData[tech].viewbox"
@@ -18,7 +28,7 @@
           >
             <use :xlink:href="`#symbol-${logosData[tech].id}`" />
           </svg>
-          <span class="projects__tooltip">{{logosData[tech].text}}</span>
+          <span class="projects__tooltip">{{ logosData[tech].text }}</span>
         </div>
       </div>
     </div>
@@ -50,8 +60,7 @@ export default {
   grid-template-columns: repeat(auto-fit, 1fr);
 
   @include bp(xs) {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
   h2 {
