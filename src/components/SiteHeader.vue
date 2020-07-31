@@ -29,7 +29,7 @@
       <g-link class="site-header__nav-link" to="/testimonials/"
         >Testimonials</g-link
       >
-      <a class="site-footer__nav-link" target="cv" href="/cv.pdf">CV</a>
+      <a class="site-header__nav-link" target="cv" href="/cv.pdf">CV</a>
     </nav>
   </header>
 </template>
